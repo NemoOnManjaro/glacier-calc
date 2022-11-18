@@ -6,16 +6,16 @@
 
 
 pkgname=glacier-calc
-pkgver=0.3.3
+pkgver=0.3.4
 pkgrel=1
 pkgdesc="Nemo calculator"
 arch=('x86_64' 'aarch64')
 url="https://github.com/nemomobile-ux/glacier-calc"
 license=('BSD-3-Clause' 'LGPL-2.1-only')
-depends=('qt5-glacier-app')
-makedepends=('git' 'cmake' 'qt5-tools')
+depends=('qt5-glacier-app>=0.9')
+makedepends=('cmake' 'qt5-tools')
 source=("${url}/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('b2c656a40f5562a08e2f35625f7b4026a2a1ab7055e94ce990dbc9b5fdb213c0')
+sha256sums=('7e973f17e436c05961dc42898528db38ee812bce339f6fca07715ce696f62abe')
 
 build() {
     cmake \
