@@ -21,6 +21,7 @@ build() {
     cmake \
         -B "${pkgname}-${pkgver}/build" \
         -S "${pkgname}-${pkgver}" \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
         -DCMAKE_INSTALL_PREFIX:PATH='/usr'
     make -C "${pkgname}-${pkgver}/build" all
 }
